@@ -8,7 +8,8 @@
 	"scripts": {
 		"start": "parcel",
 		"build": "parcel build --public-url /parcel-handlebars/",
-		"deploy": "gh-pages -d dist"
+		"deploy": "gh-pages -d dist",
+		"predeploy": "npm run build"
 	},
 	"repository": {
 		"type": "git",
@@ -22,6 +23,7 @@
 	},
 	"homepage": "https://irynasokolova-quanandrya.github.io/parcel-handlebars/",
 	"dependencies": {
+		"gh-pages": "^5.0.0",
 		"parcel": "^2.9.3",
 		"parcel-transformer-hbs": "^1.0.4"
 	},
