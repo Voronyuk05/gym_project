@@ -18,7 +18,7 @@
 	"bugs": {
 		"url": "https://github.com/IrynaSokolova-Quanandrya/parcel-handlebars/issues"
 	},
-	"homepage": "https://github.com/IrynaSokolova-Quanandrya/parcel-handlebars",
+	"homepage": "https://github.com/https://IrynaSokolova-Quanandrya.github.io/parcel-handlebars/",
 	"dependencies": {
 		"parcel": "^2.9.3",
 		"parcel-transformer-hbs": "^1.0.4"
