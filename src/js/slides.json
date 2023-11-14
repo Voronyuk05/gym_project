@@ -1,0 +1,14 @@
+[
+    {
+        "slideImg": "../assets/orange-shoes.png",
+        "slideName": "NIKE COSMIC UNITY 2"
+    },
+    {
+        "slideImg": "../assets/red-shoes.png",
+        "slideName": "NIKE SB Dunk High"
+    },
+    {
+        "slideImg": "/blue-shoes.png",
+        "slideName": "Nike Dynamo GO SE"
+    }
+]
