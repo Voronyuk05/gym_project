@@ -1,0 +1,19 @@
+.mark {
+    width: 42%;
+    height: 32px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: no-repeat center;
+    background-size: contain;
+    background-image: url('../../assets/mark.png');
+    h4 {
+        color: #FFF;
+        text-align: center;
+        font-family: Open Sans;
+        font-size: calc(10px + (20 - 10) * ((25vw - 320px) / (1200 - 320)));
+        font-style: normal;
+        font-weight: 600;
+    }
+}

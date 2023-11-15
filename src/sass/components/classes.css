@@ -1,0 +1,22 @@
+.classes {
+  min-height: 630px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.classes .container {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.classes .container .content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 31px;
+}/*# sourceMappingURL=classes.css.map */

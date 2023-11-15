@@ -1,7 +1,11 @@
 @import './base/common';
 @import './utils/colors';
-
+@import './utils/mark.scss';
+@import './components/classes.scss';
 body {
-    background-color: black;
+    margin: 0px;
     overflow-x: hidden;
+}
+* {
+    margin: 0px;
 }
