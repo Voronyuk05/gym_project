@@ -19,20 +19,26 @@
 				line-height: 50px;
 				margin-left: 5px;
 				cursor: pointer;
+				transition: 0.4s;
 			}
 
 			h3:hover {
 				color: #AE0F0F;
+				transition: 0.4s;
 			}
 		}
 
 		.navigation {
+			width: 40%;
+
 			.nav {
 				list-style-type: none;
+				display: flex;
+				flex-direction: row;
+				gap: 7%;
 
 				li {
 					display: inline;
-					padding: 0px 20px;
 
 					a {
 						text-decoration: none;
@@ -88,6 +94,7 @@
 			.button:hover {
 				background: #1d1d1d;
 				color: #ff0000;
+				transition: 0.4s;
 			}
 		}
 	}
