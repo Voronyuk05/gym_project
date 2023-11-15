@@ -2,10 +2,16 @@
 @import './utils/colors';
 @import './utils/mark.scss';
 @import './components/classes.scss';
+@import './components/header.scss';
+
 body {
-    margin: 0px;
-    overflow-x: hidden;
+	margin: 0px;
+	overflow-x: hidden;
+	background-image: url('/assets/muscular-sportsman-building-biceps-with-dumbbell-1.png');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+
 * {
-    margin: 0px;
+	margin: 0px;
 }
