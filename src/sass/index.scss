@@ -3,13 +3,16 @@
 @import './utils/mark.scss';
 @import './components/classes.scss';
 @import './components/header.scss';
-
+@import './components/trainers.scss';
 body {
 	margin: 0px;
 	overflow-x: hidden;
+	background:top;
 	background-image: url('/assets/muscular-sportsman-building-biceps-with-dumbbell-1.png');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
+	min-height: 8627px;
+	
 }
 
 * {
