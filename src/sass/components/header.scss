@@ -1,12 +1,22 @@
 .header {
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 	.container {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
 		margin-top: 2%;
+		width: 100%;
+		position: relative;
+
+		left: 0;
 
 		.logo {
 			display: flex;
+			z-index: 11;
 
 			h3 {
 				color: #FFF;
@@ -111,11 +121,28 @@
 //-----------------------------------------------------//
 
 @media screen and (max-width: 1200px) {
+	body._lock {
+		overflow: hidden;
+	}
+
 	.header {
 		.container {
+			margin-top: 0;
+
+			&._menu-backgraund::before {
+				content: "";
+				background-color: black;
+				position: fixed;
+				width: 100%;
+				left: 0;
+				top: 0;
+				height: 50px;
+				z-index: 11;
+			}
 
 			.logo {
 				width: calc((100vw * 0.52));
+				margin-left: 2%;
 
 				img {
 					width: 28px;
@@ -127,21 +154,39 @@
 			}
 
 			.navigation {
-				display: none;
-				opacity: 0;
-				background: black;
-				top: 100px;
-				position: absolute;
-				display: flex;
-				transform: translateX(-100%);
+				z-index: 10;
+				position: fixed;
+				top: 0;
+				left: -100%;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.9);
+				padding: 90px 20px 20px 20px;
+				transition: all 0.3s ease 0s;
+				overflow: auto;
+
+				&._active {
+					left: 0;
+				}
+
+				&::before {}
 
 				.nav {
-					li {}
+					flex-direction: column;
+
+					li {
+						margin: 0px 0px 30px 0px;
+
+						&:last-child {
+							margin-bottom: 0;
+						}
+					}
 				}
 			}
 
 			.content {
-				gap: 0;
+				gap: 20;
+				margin-right: 2%;
 
 				.search {
 					button {
@@ -154,7 +199,57 @@
 				.burger {
 					display: block;
 					opacity: 1;
+					position: relative;
+					z-index: 11;
+					width: 30;
+					height: 18;
+					cursor: pointer;
+
+					span,
+					&::before,
+					&::after {
+						left: 0;
+						position: absolute;
+						height: 10%;
+						width: 100%;
+						transition: all 0.3s ease 0s;
+						background-color: #FFF;
+					}
+
+					&::before,
+					&::after {
+						content: "";
+					}
+
+					&::before {
+						top: 0;
+					}
+
+					&::after {
+						bottom: 0;
+					}
+
+					span {
+						top: 50%;
+						transform: scale(1) translate(0, -50%);
+					}
+
+					&._active span {
+						transform: scale(0) translate(0, -50%);
+					}
+
+					&._active::before {
+						top: 50%;
+						transform: rotate(-45deg) translate(0, -50%);
+					}
+
+					&._active::after {
+						bottom: 50%;
+						transform: rotate(45deg) translate(0, 50%);
+					}
+
 				}
+
 
 				.button {
 					width: 106px;
@@ -195,6 +290,7 @@
 			}
 
 			.content {
+				gap: 10px;
 
 				.search {
 					button {
