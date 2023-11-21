@@ -59,3 +59,48 @@
 		}
 	}
 }
+
+@media screen and (max-width: 500px) {
+	.hero {
+
+		.container {
+			display: flex;
+			justify-content: center;
+
+			.content {
+				margin: 0% 0px 0px 0%;
+				width: 60%;
+				align-items: center;
+
+				.heading {
+					width: 100%;
+
+					h1 {
+						text-align: center;
+						font-size: 13px;
+					}
+				}
+
+				.text {
+					width: 75%;
+
+					p {
+						text-align: center;
+						font-size: 7px;
+					}
+				}
+
+				.btn {
+					width: 100%;
+					align-items: center;
+					justify-content: center;
+
+					button {
+						width: 45%;
+						font-size: 7px;
+					}
+				}
+			}
+		}
+	}
+}
