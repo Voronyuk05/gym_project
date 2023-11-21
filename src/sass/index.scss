@@ -6,6 +6,8 @@
 @import './components/trainers.scss';
 @import './components/schedule.scss';
 @import './components/shop.scss';
+@import './components/testimonials.scss';
+
 body {
 	margin: 0px;
 	overflow-x: hidden;
@@ -28,8 +30,12 @@ body {
 		transform: translateY(0%);
 		opacity: 1;
 	}
+	main {
+		overflow-x: hidden;
+	}
 }
 
 * {
+	
 	margin: 0px;
 }
