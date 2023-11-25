@@ -3,6 +3,7 @@
 @import './utils/mark.scss';
 @import './components/classes.scss';
 @import './components/header.scss';
+@import './components/hero.scss';
 @import './components/trainers.scss';
 @import './components/schedule.scss';
 @import './components/shop.scss';
@@ -11,21 +12,24 @@
 body {
 	margin: 0px;
 	overflow-x: hidden;
-	background:top;
+	background: top;
 	background-image: url('/assets/muscular-sportsman-building-biceps-with-dumbbell-1.png');
 	background-repeat: no-repeat;
 	background-size: contain;
 	min-height: 8627px;
+
 	.intersect {
 		transform: translateX(-30%);
 		transition: all 500ms linear;
 		opacity: 0;
 	}
+
 	.intersect-reverse {
 		transform: translateX(30%);
 		transition: all 500ms linear;
 		opacity: 0;
 	}
+
 	.show {
 		transform: translateY(0%);
 		opacity: 1;
