@@ -149,7 +149,7 @@
 				}
 
 				h3 {
-					font-size: 20px;
+					font-size: 24px;
 				}
 			}
 
@@ -275,9 +275,13 @@
 			.logo {
 
 
-				img {}
+				img {
+					width: calc((100vw * 0.05));
+				}
 
-				h3 {}
+				h3 {
+					font-size: calc((100vw * 0.04));
+				}
 
 			}
 
@@ -295,28 +299,32 @@
 				.search {
 					button {
 						img {
-							width: 20px;
+							width: calc((100vw * 0.045));
 						}
 					}
 				}
 
 				.burger {
-					img {
-						width: 29px;
+
+					span,
+					&::before,
+					&::after {
+						height: 9%;
+						width: 75%;
 					}
 				}
 
 				.button {
-					width: 90px;
-					height: 30px;
+					width: calc((100vw * 0.21));
+					height: calc((100vw * 0.06));
 
 
 					a {
-						font-size: 9px;
+						font-size: calc((100vw * 0.022));
 					}
 
 					img {
-						width: 25px;
+						width: calc((100vw * 0.055));
 					}
 				}
 			}
